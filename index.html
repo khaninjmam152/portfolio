@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>MD Injmam Khan – Data Analyst | SQL, Python, Excel, Power BI</title>
+  <meta name="description" content="Portfolio of MD Injmam Khan – aspiring Data Analyst and frontend developer skilled in SQL, Python, Excel and Power BI. Open to data analyst internships and entry-level roles." />
+  <meta name="theme-color" content="#0F1B33" />
+  <meta property="og:title" content="MD Injmam Khan – Data Analyst Portfolio" />
+  <meta property="og:description" content="SQL, Python, Excel and Power BI projects, certificates and resume." />
+  <meta property="og:image" content="assets/img/injmam.webp" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232557E8'/%3E%3Crect x='14' y='34' width='8' height='16' rx='2' fill='white'/%3E%3Crect x='28' y='22' width='8' height='28' rx='2' fill='white'/%3E%3Crect x='42' y='12' width='8' height='38' rx='2' fill='%23F2B134'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="wrap nav-in">
+      <a href="#home" class="brand" aria-label="MD Injmam Khan – home">
+        <img src="assets/img/injmam.webp" alt="" width="40" height="40" />
+        <span>Injmam Khan</span>
+      </a>
+      <nav class="links" id="links" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeBtn" aria-label="Switch to dark theme" title="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+        <a class="btn btn-sm btn-primary" href="assets/MD_Injmam_Khan_Resume.pdf" download><i class="fa-solid fa-download"></i> Resume</a>
+        <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero">
+      <canvas id="flow" aria-hidden="true"></canvas>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="status"><span class="dot"></span> Open to Data Analyst internships and entry-level roles</p>
+          <h1>I turn raw data into decisions you can act on.</h1>
+          <p class="lead">I'm <strong>MD Injmam Khan</strong>, a B.Tech Computer Science student who analyses data with SQL, Python, Excel and Power BI, and builds clean, responsive interfaces with React and Tailwind CSS.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="assets/MD_Injmam_Khan_Resume.pdf" download><i class="fa-solid fa-download"></i> Download resume</a>
+            <a class="btn btn-wa" data-wa="Hello Injmam! I saw your portfolio and I'd like to talk about an opportunity." href="https://wa.me/918521773934" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+            <a class="btn btn-ghost" href="#projects">See my work</a>
+          </div>
+          <ul class="social" aria-label="Profiles">
+            <li><a href="https://www.linkedin.com/in/md-injmam-khan-b30834276/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/khaninjmam152" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="mailto:khaninjmam152@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
+            <li><a href="tel:+918521773934" aria-label="Call"><i class="fa-solid fa-phone"></i></a></li>
+          </ul>
+        </div>
+
+        <!-- SQL console: the page's signature moment -->
+        <div class="console" id="console" aria-label="SQL query that returns Injmam's profile">
+          <div class="console-bar">
+            <span class="lights"><i></i><i></i><i></i></span>
+            <span class="tab">injmam.sql</span>
+            <button class="run" id="runBtn" aria-label="Run query again"><i class="fa-solid fa-play"></i> Run</button>
+          </div>
+          <pre class="code" id="code" aria-live="off"></pre>
+          <div class="result" id="result" hidden>
+            <table>
+              <tbody>
+                <tr><th>name</th><td>MD Injmam Khan</td></tr>
+                <tr><th>role</th><td>Data Analyst (intern / entry-level)</td></tr>
+                <tr><th>skills</th><td>SQL, Python, Excel, Power BI</td></tr>
+                <tr><th>also</th><td>Frontend: HTML, CSS, JS, React</td></tr>
+                <tr><th>status</th><td><span class="ok">open_to_work = TRUE</span></td></tr>
+              </tbody>
+            </table>
+            <p class="rows"><i class="fa-solid fa-circle-check"></i> 1 row returned in 0.002 s</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap kpis">
+        <div class="kpi"><b data-count="3">0</b><span>internships completed</span></div>
+        <div class="kpi"><b data-count="5">0</b><span>course certificates</span></div>
+        <div class="kpi"><b data-count="4">0</b><span>projects built</span></div>
+        <div class="kpi"><b data-count="2027">0</b><span>B.Tech graduation</span></div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="track">
+        <span><i class="fa-solid fa-database"></i> SQL</span><span><i class="fa-brands fa-python"></i> Python</span><span><i class="fa-solid fa-file-excel"></i> Excel</span><span><i class="fa-solid fa-chart-column"></i> Power BI</span><span><i class="fa-brands fa-r-project"></i> R</span><span><i class="fa-brands fa-react"></i> React</span><span><i class="fa-brands fa-js"></i> JavaScript</span><span><i class="fa-brands fa-html5"></i> HTML5</span><span><i class="fa-brands fa-css3-alt"></i> CSS3</span><span><i class="fa-brands fa-git-alt"></i> Git</span>
+        <span><i class="fa-solid fa-database"></i> SQL</span><span><i class="fa-brands fa-python"></i> Python</span><span><i class="fa-solid fa-file-excel"></i> Excel</span><span><i class="fa-solid fa-chart-column"></i> Power BI</span><span><i class="fa-brands fa-r-project"></i> R</span><span><i class="fa-brands fa-react"></i> React</span><span><i class="fa-brands fa-js"></i> JavaScript</span><span><i class="fa-brands fa-html5"></i> HTML5</span><span><i class="fa-brands fa-css3-alt"></i> CSS3</span><span><i class="fa-brands fa-git-alt"></i> Git</span>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <div class="wrap about-grid">
+        <div class="portrait reveal" id="portrait">
+          <div class="ring"></div>
+          <img src="assets/img/injmam.webp" alt="Portrait of MD Injmam Khan" width="420" height="420" />
+          <div class="chip c1"><i class="fa-solid fa-database"></i> SQL</div>
+          <div class="chip c2"><i class="fa-brands fa-python"></i> Python</div>
+          <div class="chip c3"><i class="fa-solid fa-chart-column"></i> Power BI</div>
+        </div>
+
+        <div class="about-copy reveal">
+          <h2>The story behind the data</h2>
+          <p>I'm a Computer Science and Engineering student passionate about Data Analytics, Business Intelligence and data-driven decision-making. I build my skills in SQL, Python, Microsoft Excel and Power BI to turn raw data into insights, spot trends and support better business decisions.</p>
+          <p>Good analysis isn't just numbers. It's finding the story behind the data and explaining it clearly. I'm now looking for Data Analyst internships and entry-level roles where I can learn from experienced professionals and work on real business problems.</p>
+
+          <div class="tabs" role="tablist" aria-label="What I'm learning">
+            <button role="tab" aria-selected="true" data-tab="sql">SQL</button>
+            <button role="tab" aria-selected="false" data-tab="py">Python</button>
+            <button role="tab" aria-selected="false" data-tab="xl">Excel</button>
+            <button role="tab" aria-selected="false" data-tab="pbi">Power BI</button>
+            <button role="tab" aria-selected="false" data-tab="st">Statistics</button>
+          </div>
+          <div class="tabpanel" id="tabpanel" role="tabpanel"></div>
+
+          <dl class="facts">
+            <div><dt><i class="fa-solid fa-graduation-cap"></i> Education</dt><dd>B.Tech CSE, Chaudhary Devi Lal University, Sirsa (2023–2027)</dd></div>
+            <div><dt><i class="fa-solid fa-location-dot"></i> Location</dt><dd>Sirsa, Haryana, India</dd></div>
+            <div><dt><i class="fa-solid fa-bullseye"></i> Looking for</dt><dd>Data Analyst internships and entry-level roles</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section alt">
+      <div class="wrap">
+        <div class="head reveal">
+          <h2>Skills and tools</h2>
+          <p>Pick a group to filter. Everything here is something I've practised in courses, internships or projects.</p>
+        </div>
+        <div class="filters" id="skillFilters" role="group" aria-label="Filter skills">
+          <button class="on" data-f="all">All</button>
+          <button data-f="data">Data analytics</button>
+          <button data-f="front">Frontend</button>
+          <button data-f="tools">Programming and tools</button>
+        </div>
+        <div class="skill-grid" id="skillGrid">
+          <article class="skill" data-g="data"><i class="fa-solid fa-database" style="--c:#336791"></i><h3>SQL (PostgreSQL)</h3><p>Querying, filtering, joins and aggregations.</p></article>
+          <article class="skill" data-g="data"><i class="fa-brands fa-python" style="--c:#3776AB"></i><h3>Python</h3><p>Pandas, data manipulation and exploratory analysis.</p></article>
+          <article class="skill" data-g="data"><i class="fa-solid fa-file-excel" style="--c:#217346"></i><h3>Microsoft Excel</h3><p>Cleaning, formulas, sorting, filtering and reports.</p></article>
+          <article class="skill" data-g="data"><i class="fa-solid fa-chart-column" style="--c:#D9A400"></i><h3>Power BI</h3><p>Interactive dashboards, data modeling and DAX basics.</p></article>
+          <article class="skill" data-g="data"><i class="fa-brands fa-r-project" style="--c:#276DC3"></i><h3>R programming</h3><p>Statistical analysis and visualisation.</p></article>
+          <article class="skill" data-g="data"><i class="fa-solid fa-broom" style="--c:#11A3A3"></i><h3>Data cleaning and EDA</h3><p>Fixing messy data and finding patterns in it.</p></article>
+          <article class="skill" data-g="front"><i class="fa-brands fa-html5" style="--c:#E34F26"></i><h3>HTML5</h3><p>Semantic, accessible page structure.</p></article>
+          <article class="skill" data-g="front"><i class="fa-brands fa-css3-alt" style="--c:#1572B6"></i><h3>CSS3</h3><p>Flexbox, grid and responsive layouts.</p></article>
+          <article class="skill" data-g="front"><i class="fa-brands fa-js" style="--c:#C9A800"></i><h3>JavaScript</h3><p>DOM, events and calling REST APIs.</p></article>
+          <article class="skill" data-g="front"><i class="fa-brands fa-react" style="--c:#20A8D8"></i><h3>React.js</h3><p>Component-based user interfaces.</p></article>
+          <article class="skill" data-g="front"><i class="fa-solid fa-wind" style="--c:#06B6D4"></i><h3>Tailwind CSS</h3><p>Fast, consistent styling with utilities.</p></article>
+          <article class="skill" data-g="front"><i class="fa-brands fa-bootstrap" style="--c:#7952B3"></i><h3>Bootstrap</h3><p>Quick responsive component layouts.</p></article>
+          <article class="skill" data-g="tools"><i class="fa-solid fa-code" style="--c:#00599C"></i><h3>C and C++</h3><p>Programming fundamentals, DSA and OOP.</p></article>
+          <article class="skill" data-g="tools"><i class="fa-brands fa-git-alt" style="--c:#F05032"></i><h3>Git and GitHub</h3><p>Version control and collaboration.</p></article>
+          <article class="skill" data-g="tools"><i class="fa-solid fa-terminal" style="--c:#007ACC"></i><h3>VS Code and Postman</h3><p>Everyday editor and API testing.</p></article>
+          <article class="skill" data-g="tools"><i class="fa-solid fa-cloud-arrow-up" style="--c:#555"></i><h3>Vercel</h3><p>Deploying frontend projects.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section">
+      <div class="wrap narrow">
+        <div class="head reveal">
+          <h2>Experience</h2>
+          <p>Remote internships and training, newest first.</p>
+        </div>
+        <ol class="timeline">
+          <li class="tl reveal">
+            <span class="tl-dot"></span>
+            <div class="tl-card">
+              <time>Aug 2026 – Oct 2026 · 3 months</time>
+              <h3>Data Analyst Intern</h3>
+              <p class="org">SkillCourse · Remote</p>
+              <p>Completed hands-on SQL, Excel and Power BI programmes and earned certificates for each. Practised querying with PostgreSQL, spreadsheet reporting and dashboard building.</p>
+              <div class="tags"><span>SQL</span><span>Excel</span><span>Power BI</span><span>Python</span><span>Statistics</span></div>
+              <a class="more" href="#certificates" data-open-cert="sql">View certificates</a>
+            </div>
+          </li>
+          <li class="tl reveal">
+            <span class="tl-dot"></span>
+            <div class="tl-card">
+              <time>Feb 2025 – Sep 2025 · 8 months</time>
+              <h3>Data Analyst Intern</h3>
+              <p class="org">30DaysCoding · Remote</p>
+              <p>Worked through the Data Analytics programme covering Python, statistical analysis, data cleaning and visualisation, and completed it with a certificate.</p>
+              <div class="tags"><span>Python</span><span>Statistical analysis</span><span>Data cleaning</span></div>
+              <a class="more" href="#certificates" data-open-cert="da">View certificate</a>
+            </div>
+          </li>
+          <li class="tl reveal">
+            <span class="tl-dot"></span>
+            <div class="tl-card">
+              <time>Jun 2025 – Jul 2025 · 2 months</time>
+              <h3>Frontend Developer Intern</h3>
+              <p class="org">Simplilearn · Remote</p>
+              <p>Built responsive web apps with HTML5, CSS3, JavaScript and Tailwind CSS, improved mobile compatibility, and helped with UI development and debugging.</p>
+              <div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Tailwind CSS</span><span>Git</span></div>
+              <a class="more" href="#certificates" data-open-cert="fe">View certificate</a>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section alt">
+      <div class="wrap">
+        <div class="head reveal">
+          <h2>Projects</h2>
+          <p>Dashboards and web apps I've built while learning.</p>
+        </div>
+        <div class="filters" id="projFilters" role="group" aria-label="Filter projects">
+          <button class="on" data-f="all">All</button>
+          <button data-f="data">Data</button>
+          <button data-f="front">Frontend</button>
+        </div>
+
+        <div class="proj-grid" id="projGrid">
+          <article class="proj" data-g="data">
+            <button class="proj-media shot" data-lightbox="assets/img/dashboard.webp" data-caption="Sales analytics dashboard built in Power BI" aria-label="Enlarge dashboard preview">
+              <img src="assets/img/dashboard.webp" alt="Power BI sales dashboard with KPIs, monthly sales chart and regional map" loading="lazy" />
+              <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </button>
+            <div class="proj-body">
+              <h3>Business sales dashboard</h3>
+              <p>A Power BI dashboard with sales and profit KPIs, monthly trends, category and sub-category breakdowns, a regional map and a top-products table.</p>
+              <div class="tags"><span>Power BI</span><span>DAX</span><span>Data visualization</span></div>
+              <div class="proj-links">
+                <button class="btn btn-sm btn-primary" data-lightbox="assets/img/dashboard.webp" data-caption="Sales analytics dashboard built in Power BI"><i class="fa-solid fa-eye"></i> Preview</button>
+                <a class="btn btn-sm btn-ghost" href="https://www.linkedin.com/in/md-injmam-khan-b30834276/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i> On LinkedIn</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj" data-g="front">
+            <div class="proj-media art a1"><i class="fa-solid fa-cloud-sun-rain"></i></div>
+            <div class="proj-body">
+              <h3>Weather app</h3>
+              <p>Responsive weather app that pulls real-time data from a public REST API, with a clean mobile-friendly interface.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>REST API</span></div>
+              <div class="proj-links">
+                <a class="btn btn-sm btn-primary" data-proj="weather" data-kind="code" href="https://github.com/khaninjmam152?tab=repositories" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                <a class="btn btn-sm btn-ghost" data-proj="weather" data-kind="live" href="#contact" hidden><i class="fa-solid fa-arrow-up-right-from-square"></i> Live demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj" data-g="front">
+            <div class="proj-media art a2"><i class="fa-solid fa-bag-shopping"></i></div>
+            <div class="proj-body">
+              <h3>E-commerce frontend</h3>
+              <p>Responsive product pages, navigation bar and cart interface built with modern frontend design practices.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Tailwind CSS</span></div>
+              <div class="proj-links">
+                <a class="btn btn-sm btn-primary" data-proj="shop" data-kind="code" href="https://github.com/khaninjmam152?tab=repositories" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                <a class="btn btn-sm btn-ghost" data-proj="shop" data-kind="live" href="#contact" hidden><i class="fa-solid fa-arrow-up-right-from-square"></i> Live demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj" data-g="front">
+            <div class="proj-media art a3"><i class="fa-solid fa-list-check"></i></div>
+            <div class="proj-body">
+              <h3>To-do task manager</h3>
+              <p>Add, update and delete tasks in a responsive, interactive layout for organising the day.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <div class="proj-links">
+                <a class="btn btn-sm btn-primary" data-proj="todo" data-kind="code" href="https://github.com/khaninjmam152?tab=repositories" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                <a class="btn btn-sm btn-ghost" data-proj="todo" data-kind="live" href="#contact" hidden><i class="fa-solid fa-arrow-up-right-from-square"></i> Live demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj soon" data-g="data">
+            <div class="proj-body">
+              <h3><i class="fa-solid fa-hourglass-half"></i> Coming next</h3>
+              <p>A SQL analysis project, an Excel report and a Python EDA notebook are in progress. Follow along on GitHub.</p>
+              <div class="proj-links"><a class="btn btn-sm btn-ghost" href="https://github.com/khaninjmam152" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Follow on GitHub</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATES ============ -->
+    <section id="certificates" class="section">
+      <div class="wrap">
+        <div class="head reveal">
+          <h2>Certificates</h2>
+          <p>Select a certificate to view it full size.</p>
+        </div>
+        <div class="cert-grid" id="certGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section alt">
+      <div class="wrap narrow">
+        <div class="head reveal"><h2>Education</h2></div>
+        <div class="edu">
+          <article class="edu-card reveal">
+            <i class="fa-solid fa-building-columns"></i>
+            <div><h3>Bachelor of Technology, Computer Science and Engineering</h3><p>Chaudhary Devi Lal University (CDLU), Sirsa</p><span>Aug 2023 – Jun 2027 · CGPA 7.2 / 10</span></div>
+          </article>
+          <article class="edu-card reveal">
+            <i class="fa-solid fa-flask"></i>
+            <div><h3>Class 12, Science</h3><p>Bihar School Examination Board (BSEB)</p><span>2021 – 2022 · 74.08%</span></div>
+          </article>
+          <article class="edu-card reveal">
+            <i class="fa-solid fa-book-open"></i>
+            <div><h3>Class 10</h3><p>Bihar School Examination Board (BSEB)</p><span>2019 – 2020 · 70%</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section">
+      <div class="wrap">
+        <div class="head reveal">
+          <h2>Let's connect</h2>
+          <p>Hiring for a data analyst role or an internship? Message me and I'll reply quickly.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-list reveal">
+            <a class="c-item" href="mailto:khaninjmam152@gmail.com"><i class="fa-solid fa-envelope"></i><span><b>Email</b>khaninjmam152@gmail.com</span></a>
+            <button class="c-item" id="copyMail" type="button"><i class="fa-regular fa-copy"></i><span><b>Copy email address</b>Saves it to your clipboard</span></button>
+            <a class="c-item" href="tel:+918521773934"><i class="fa-solid fa-phone"></i><span><b>Call</b>+91 85217 73934</span></a>
+            <a class="c-item wa" data-wa="Hello Injmam! I found your portfolio and wanted to connect." href="https://wa.me/918521773934" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i><span><b>WhatsApp</b>Start a chat</span></a>
+            <a class="c-item" href="https://www.linkedin.com/in/md-injmam-khan-b30834276/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i><span><b>LinkedIn</b>md-injmam-khan</span></a>
+            <a class="c-item" href="https://github.com/khaninjmam152" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i><span><b>GitHub</b>khaninjmam152</span></a>
+            <a class="c-item" href="https://www.google.com/maps/search/?api=1&query=Sirsa+Haryana+India" target="_blank" rel="noopener"><i class="fa-solid fa-location-dot"></i><span><b>Location</b>Sirsa, Haryana, India</span></a>
+          </div>
+
+          <form class="form reveal" id="contactForm" novalidate>
+            <h3>Send a message</h3>
+            <label>Your name<input id="fName" name="name" type="text" autocomplete="name" required placeholder="Jane Doe" /></label>
+            <label>Your email<input id="fEmail" name="email" type="email" autocomplete="email" required placeholder="jane@company.com" /></label>
+            <label>Subject<input id="fSubject" name="subject" type="text" required placeholder="Data Analyst internship" /></label>
+            <label>Message<textarea id="fMsg" name="message" rows="5" required placeholder="Tell me about the role or project…"></textarea></label>
+            <p class="err" id="formErr" role="alert" hidden></p>
+            <div class="form-actions">
+              <button class="btn btn-wa" type="submit" data-via="wa"><i class="fa-brands fa-whatsapp"></i> Send on WhatsApp</button>
+              <button class="btn btn-ghost" type="submit" data-via="mail"><i class="fa-solid fa-envelope"></i> Send by email</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap foot-in">
+      <p>© <span id="year">2026</span> MD Injmam Khan. Learn continuously. Build consistently. Turn data into decisions.</p>
+      <ul class="social">
+        <li><a href="https://www.linkedin.com/in/md-injmam-khan-b30834276/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        <li><a href="https://github.com/khaninjmam152" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="mailto:khaninjmam152@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
+        <li><a href="#home" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <a class="fab" data-wa="Hello Injmam! I'd like to connect with you." href="https://wa.me/918521773934" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lb-close" id="lbClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lb-nav prev" id="lbPrev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+    <figure>
+      <img id="lbImg" alt="" />
+      <figcaption id="lbCap"></figcaption>
+    </figure>
+    <button class="lb-nav next" id="lbNext" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
