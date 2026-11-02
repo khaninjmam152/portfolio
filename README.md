@@ -1,148 +1,20 @@
-<div align="center">
+# MD Injmam Khan – Data Analytics Portfolio
 
-# MD Injmam Khan – Portfolio
+A responsive static portfolio built with HTML, CSS and JavaScript. The content is focused on Data Analytics, Business Intelligence and AI-assisted data applications.
 
-**Aspiring Data Analyst | Frontend Developer**
-
-Turning data into insights and ideas into responsive web experiences.
-
-[![Live Site](https://img.shields.io/badge/Live-Portfolio-2557E8?style=for-the-badge&logo=githubpages&logoColor=white)](https://khaninjmam152.github.io/portfolio/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/md-injmam-khan-b30834276/)
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-Chat-1FA855?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/918521773934)
-[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:khaninjmam152@gmail.com)
-
-</div>
-
----
-
-## About
-
-This is my personal portfolio website. It presents my skills in **SQL, Python, Excel and Power BI**, my frontend development work, internships, certificates and projects. I built it as a fast, static site with no build step.
-
-I am currently looking for **Data Analyst internships and entry-level roles**.
-
-## Features
-
-- **Live SQL console in the hero**: a query types itself out and returns my profile, with a Run button to replay it
-- **Animated data-flow background**, count-up stats and a scrolling tools strip
-- **Filterable Skills and Projects** sections
-- **Experience timeline** with Data Analyst and Frontend internships
-- **Certificate gallery** with a full-size viewer (arrow keys and Esc supported)
-- **Contact form** that sends to WhatsApp or email, with validation
-- **WhatsApp chat button** (floating) with a prefilled message
-- **Downloadable resume** (PDF)
-- **Dark / light theme**, remembered between visits
-- Fully **responsive**, keyboard accessible, and respects reduced-motion settings
-
-## Sections
-
-| Section | What it shows |
-| --- | --- |
-| Home | Intro, resume download, WhatsApp chat, key numbers |
-| About | Story, learning focus (SQL, Python, Excel, Power BI, Statistics) |
-| Skills | Data analytics, frontend, programming and tools |
-| Experience | SkillCourse, 30DaysCoding and Simplilearn internships |
-| Projects | Power BI sales dashboard, Weather App, E-commerce frontend, To-Do App |
-| Certificates | SQL, Power BI, Excel, Data Analytics, Front-End Development |
-| Education | B.Tech CSE (CDLU, Sirsa), Class 12, Class 10 |
-| Contact | Email, phone, WhatsApp, LinkedIn, GitHub, message form |
-
-## Tech Stack
-
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Font Awesome](https://img.shields.io/badge/Font_Awesome-528DD7?style=flat-square&logo=fontawesome&logoColor=white)
-![Google Fonts](https://img.shields.io/badge/Google_Fonts-4285F4?style=flat-square&logo=googlefonts&logoColor=white)
-
-Plain HTML, CSS and vanilla JavaScript. Fonts come from Google Fonts and icons from Font Awesome (CDN).
-
-## Project Structure
-
-```
-Portfolio/
-├── index.html                  # Page markup
-├── style.css                   # Styles, theme tokens, responsive rules
-├── script.js                   # Animations, filters, lightbox, form, CONFIG
-├── README.md
-└── assets/
-    ├── MD_Injmam_Khan_Resume.pdf
-    ├── img/
-    │   ├── injmam.webp         # Profile photo
-    │   └── dashboard.webp      # Power BI dashboard preview
-    └── certs/
-        ├── sql.webp
-        ├── excel.webp
-        ├── data-analytics.webp
-        ├── frontend.webp
-        └── powerbi.webp        # Add this file to show the Power BI certificate
-```
-
-## Run Locally
-
-```bash
-git clone https://github.com/khaninjmam152/portfolio.git
-cd portfolio
-
-# Option 1: open index.html in your browser
-
-# Option 2: local server
-python -m http.server 5500
-# visit http://localhost:5500
-```
-
-## Customize
-
-Open `script.js` and edit `CONFIG` at the top:
-
-```js
-const CONFIG = {
-  phoneIntl: "918521773934",
-  email: "khaninjmam152@gmail.com",
-  linkedin: "https://www.linkedin.com/in/md-injmam-khan-b30834276/",
-  projects: {
-    weather: { code: "https://github.com/...", live: "https://..." },
-    shop:    { code: "", live: "" },
-    todo:    { code: "", live: "" }
-  }
-};
-```
-
-- Leave a project link empty (`""`) to keep the default. A **Live demo** button appears once you add a `live` URL.
-- Replace `assets/MD_Injmam_Khan_Resume.pdf` to update the resume.
-- Add `assets/certs/powerbi.webp` to display the Power BI certificate.
-- Colors and fonts are CSS variables at the top of `style.css`.
+## Run locally
+Open `index.html` in a browser.
 
 ## Deploy
+Upload the contents of this folder to GitHub Pages, Netlify or Vercel.
 
-**GitHub Pages**
+## Update your details
+- `index.html` — portfolio text, projects, education and contact links.
+- `script.js` — contact details, theme, interactions and certificate list.
+- `style.css` — visual styling and responsive layout.
+- `assets/` — profile image, project preview, certificates and resume.
 
-1. Push this folder to a GitHub repository.
-2. Go to **Settings → Pages**.
-3. Under **Source**, choose **Deploy from a branch → main / (root)** and save.
-4. Your site goes live at `https://khaninjmam152.github.io/portfolio/`.
-
-**Vercel**
-
-```bash
-npm i -g vercel
-vercel --prod
-```
-
-## Contact
-
-- **Email:** [khaninjmam152@gmail.com](mailto:khaninjmam152@gmail.com)
-- **Phone / WhatsApp:** [+91 85217 73934](https://wa.me/918521773934)
-- **LinkedIn:** [md-injmam-khan](https://www.linkedin.com/in/md-injmam-khan-b30834276/)
-- **GitHub:** [khaninjmam152](https://github.com/khaninjmam152)
-- **Location:** Sirsa, Haryana, India
-
----
-
-<div align="center">
-
-*Learn continuously. Build consistently. Turn data into decisions.*
-
-If you like this project, consider giving it a star.
-
-</div>
+## Notes
+- Training programmes are listed under **Training & Professional Development**, not as employment internships.
+- Only the Customer Shopping Behavior Analysis project currently has a direct repository link in the portfolio. Add exact repository URLs for other projects when they are public.
+- The Power BI certificate card is not displayed until its certificate image is added to `assets/certs/`.

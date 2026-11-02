@@ -6,13 +6,7 @@ const CONFIG = {
   phoneIntl: "918521773934",              // country code + number, no "+" or spaces
   email: "khaninjmam152@gmail.com",
   linkedin: "https://www.linkedin.com/in/md-injmam-khan-b30834276/",
-  // Add your project links here once the repos / demos are public.
-  // Leave "" to keep the default (your GitHub repositories page / hidden live button).
-  projects: {
-    weather: { code: "", live: "" },
-    shop:    { code: "", live: "" },
-    todo:    { code: "", live: "" }
-  }
+  projects: {}
 };
 
 const $  = (s, r = document) => r.querySelector(s);
@@ -215,10 +209,8 @@ bindFilter("#projFilters", "#projGrid .proj");
 /* ---------- Certificates + lightbox ---------- */
 const CERTS = [
   { id: "sql", title: "30 Days SQL Micro Course", org: "SkillCourse", date: "17 Sep 2026", code: "SC-FSKFQ0FS1B", img: "assets/certs/sql.webp" },
-  { id: "pbi", title: "30 Days Power BI Micro Course", org: "SkillCourse", date: "2026", code: "", img: "assets/certs/powerbi.webp" },
-  { id: "xl",  title: "Microsoft Excel Beginners to Advance", org: "SkillCourse", date: "27 Aug 2026", code: "SC-CST94LXYVL", img: "assets/certs/excel.webp" },
-  { id: "da",  title: "Data Analytics Course", org: "30 Days Coding", date: "16 Sep 2025", code: "MNDDJHPL", img: "assets/certs/data-analytics.webp" },
-  { id: "fe",  title: "Introduction to Front End Development", org: "Simplilearn SkillUP", date: "19 Sep 2025", code: "8992992", img: "assets/certs/frontend.webp" }
+  { id: "xl", title: "Microsoft Excel Beginners to Advance", org: "SkillCourse", date: "27 Aug 2026", code: "SC-CST94LXYVL", img: "assets/certs/excel.webp" },
+  { id: "da", title: "Data Analytics Course", org: "30DaysCoding", date: "16 Sep 2025", code: "MNDDJHPL", img: "assets/certs/data-analytics.webp" }
 ];
 const lb = { el: $("#lightbox"), img: $("#lbImg"), cap: $("#lbCap"), items: [], i: 0, last: null };
 function lbShow() {
